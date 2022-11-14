@@ -1,1 +1,1 @@
-# poppi-react
+# Poppi Landing Page (React)
