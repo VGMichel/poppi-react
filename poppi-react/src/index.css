@@ -1,0 +1,72 @@
+/* Import Google Fonts - Roboto, Reem Kufi, Indie Flower and Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Comfortaa:wght@300;400;500;600&display=swap");
+
+/* Import Font Awesome for Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* Import Animate.css library */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css");
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?obtley");
+  src: url("../fonts/icomoon.eot?obtley#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?obtley") format("truetype"),
+    url("../fonts/icomoon.woff?obtley") format("woff"),
+    url("../fonts/icomoon.svg?obtley#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  /* Colors */
+  --pale-pink: #fff0f5;
+  --light-pink: #fde1eb;
+  --hot-pink: #ff699f;
+  --medium-pink: #ffa1c3;
+  --black-color: #242424;
+  --white-color: #ffffff;
+
+  /* Fonts */
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Comfortaa", sans-serif;
+
+  /* Font Sizes */
+  --base-font-size: 100%;
+  /*  --fluid-typography-ratio: 0.5;
+    --rem: calc(var(--base-font-size) + var(--fluid-typography-ratio) * 1vw);
+    font-size: var(--rem); */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-pink);
+  color: var(--black-color);
+  font-family: var(--primary-font);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 723px;
+  transition: 0.25s;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
