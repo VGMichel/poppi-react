@@ -1,0 +1,15 @@
+.main {
+    width: 1300px;
+}
+
+.footer {
+    margin: 20px 0 0;
+    font-size: 0.8em;
+    color: gray;
+    opacity: 0.8;
+}
+.footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
