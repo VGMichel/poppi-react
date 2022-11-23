@@ -1,14 +1,15 @@
 import { useState } from 'react'
+import $ from 'jquery'
 import img1 from '../assets/hairi-2.png'
 import img2 from '../assets/ram-see-thru.png'
 import img3 from '../assets/dtiys1.png'
 import img4 from '../assets/hard-candy_2.png'
-import img5 from '../assets/tangent\ bun.png'
+import img5 from '../assets/tangent-bun.png'
 import "./CharactersPage.css";
+import { useEffect } from 'react'
 
 
-export default function CharactersPage({ active, handleChangeActive }) {
-
+export default function CharactersPage() {
 
 const styleImg1 = {
   /* Hairi */
@@ -45,19 +46,22 @@ const styleImg5 = {
   backgroundColor: 'white',
 }
 
-
-$(".option").click(function(){
-   $(".option").removeClass("active");
-   $(this).addClass("active");
+useEffect(() => {
+    $(".option").click(function(){
+        $(".option").removeClass("active");
+        $(this).addClass("active");
    
 });
+})
 
   return (
     <div className="characters-page section">
       {/* Image Size: 1280px X 853px */}
-      <div className="options">
-          <div className="option active"
-              style={styleImg1}>
+        <div className="options">
+          <div
+            className="option active"
+              style={styleImg1}
+              >
               <div className="shadow"></div>
               <div className="label">
                   <div className="icon">
@@ -69,7 +73,8 @@ $(".option").click(function(){
                   </div>
               </div>
           </div>
-          <div className="option"
+          <div 
+            className="option"
               style={styleImg2}>
               <div className="shadow"></div>
               <div className="label">
@@ -83,7 +88,8 @@ $(".option").click(function(){
                   </div>
               </div>
           </div>
-          <div className="option"
+          <div 
+            className="option"
               style={styleImg3}>
               <div className="shadow"></div>
               <div className="label">
@@ -96,7 +102,8 @@ $(".option").click(function(){
                   </div>
               </div>
           </div>
-          <div className="option"
+          <div 
+            className="option"
               style={styleImg4}>
               <div className="shadow"></div>
               <div className="label">
@@ -109,7 +116,8 @@ $(".option").click(function(){
                   </div>
               </div>
           </div>
-          <div className="option"
+          <div 
+            className="option"
               style={styleImg5}>
               <div className="shadow"></div>
               <div className="label">

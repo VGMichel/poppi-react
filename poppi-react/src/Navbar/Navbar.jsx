@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link to="/contact">Contact</Link>
       </li>
       <li className="item">
-        <Link to="/">
+        <Link to="/fan-page">
           <img src={favicon} alt="heart shaped logo" className="heart-logo" />
         </Link>
       </li>
