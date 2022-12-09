@@ -6,6 +6,7 @@ import FanPage from "../FanPage/FanPage";
 import LandingPage from '../LandingPage/LandingPage';
 import Navbar from '../Navbar/Navbar';
 import NotFound from "../NotFound/NotFound";
+import ProductsPage from "../ProductsPage/ProductsPage";
 import "./App.css";
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/products" element={<ProductsPage />} />
           <Route path="/characters" element={<CharactersPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/fan-page" element={<FanPage />} />

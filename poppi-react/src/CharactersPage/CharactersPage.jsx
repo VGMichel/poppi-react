@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import $ from 'jquery'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import img1 from '../assets/hairi-2.png'
 import img2 from '../assets/ram-see-thru.png'
 import img3 from '../assets/dtiys1.png'
@@ -10,6 +12,8 @@ import { useEffect } from 'react'
 
 
 export default function CharactersPage() {
+
+AOS.init();
 
 const styleImg1 = {
   /* Hairi */
@@ -61,6 +65,8 @@ useEffect(() => {
           <div
             className="option active"
               style={styleImg1}
+              data-aos="fade-right"
+              data-aos-duration="100"
               >
               <div className="shadow"></div>
               <div className="label">
@@ -75,7 +81,9 @@ useEffect(() => {
           </div>
           <div 
             className="option"
-              style={styleImg2}>
+              style={styleImg2}
+              data-aos="fade-right"
+              data-aos-duration="300">
               <div className="shadow"></div>
               <div className="label">
                   <div className="icon">
@@ -90,7 +98,9 @@ useEffect(() => {
           </div>
           <div 
             className="option"
-              style={styleImg3}>
+              style={styleImg3}
+              data-aos="fade-right"
+              data-aos-duration="400">
               <div className="shadow"></div>
               <div className="label">
                   <div className="icon">
@@ -104,7 +114,9 @@ useEffect(() => {
           </div>
           <div 
             className="option"
-              style={styleImg4}>
+              style={styleImg4}
+              data-aos="fade-right"
+              data-aos-duration="500">
               <div className="shadow"></div>
               <div className="label">
                   <div className="icon">
@@ -118,7 +130,9 @@ useEffect(() => {
           </div>
           <div 
             className="option"
-              style={styleImg5}>
+              style={styleImg5}
+              data-aos="fade-right"
+              data-aos-duration="600">
               <div className="shadow"></div>
               <div className="label">
                   <div className="icon">
