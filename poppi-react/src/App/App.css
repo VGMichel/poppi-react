@@ -13,3 +13,20 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 1390px) {
+  .main {
+    width: 1038px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .main {
+    width: 450px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    height: none;
+  }
+}

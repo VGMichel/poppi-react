@@ -35,6 +35,7 @@ function SwitchPage (page_id) {
   return (
   <nav className="navbar">
     <Logo />
+    <i class="fa-solid fa-bars"></i>
     <ul className="nav-items">
       <li className="item is-active">
         <Link to="/" data-switcher data-tab="1">Home</Link>

@@ -70,3 +70,16 @@ nav .nav-items .item.is-active {
     top: 28%;
     right: 7%;
 }
+
+@media (max-width: 1080px) {
+  nav .nav-items {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+
+}
